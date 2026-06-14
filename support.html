@@ -23,7 +23,7 @@
 <p>FitLink syncs your Fitbit activity (steps, calories, heart rate, sleep) into Apple Health.</p>
 
 <h2>Contact</h2>
-<p>Email: <a href="mailto:support@fitlink.app">support@fitlink.app</a> — we aim to reply within a few business days.</p>
+<p>Email: <span class="protected-email"><noscript>hellofitlink&#160;[at]&#160;twosevenfive&#160;[dot]&#160;co</noscript></span> — we aim to reply within a few business days.</p>
 
 <h2>Getting started</h2>
 <ol>
@@ -63,6 +63,23 @@ Health app. Revoke FitLink’s Fitbit access at
 FitLink is an independent application and is not affiliated with, endorsed by, or sponsored by Fitbit LLC,
 Google LLC, or Apple Inc.
 </footer>
+
+<a href="mailto:do-not-harvest@example.com" style="display:none" aria-hidden="true" tabindex="-1">.</a>
+<script>
+(function(){
+  var c=[104,101,108,108,111,102,105,116,108,105,110,107,64,116,119,111,115,101,118,101,110,102,105,118,101,46,99,111];
+  var addr=String.fromCharCode.apply(null,c);
+  var nodes=document.querySelectorAll('.protected-email');
+  for(var i=0;i<nodes.length;i++){
+    nodes[i].textContent='';
+    var link=document.createElement('a');
+    link.href='mailto:'+addr;
+    link.textContent=addr;
+    link.setAttribute('rel','nofollow');
+    nodes[i].appendChild(link);
+  }
+})();
+</script>
 
 </body>
 </html>
